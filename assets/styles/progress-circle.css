@@ -1,0 +1,65 @@
+.progress {
+    position: relative;
+}
+
+.progressbar-back {
+     stroke: #eee;
+     stroke-width: 1;
+     fill: none;
+}
+.progressbar-line {
+    stroke-width: 3;
+    fill: none;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    transform-origin: 50px 50px;
+    stroke-dasharray: 30.4777rem, 30.4777rem;
+    stroke-dashoffset: 30.4777rem;
+    transition: stroke-dashoffset 1s ease;
+}
+.progressbar-marker {
+    fill: #55b9e6;
+    transform-origin: 5rem 5rem;
+    transform: rotate(0deg);
+    transition: transform 1s ease
+}
+.progressbar-text {
+    position: absolute; 
+    text-align: center; 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+    font-size: 1.96rem;
+}
+
+.line-color-one {
+    stroke: #950086;
+}
+.line-color-two {
+    stroke: #739500;
+}
+.line-color-three {
+    stroke: #4A3274;
+}
+
+.marker-color-one {
+    fill: #950086;
+}
+.marker-color-two {
+    fill: #739500;
+}
+.marker-color-three {
+    fill: #4A3274;
+}
+
+.text-color-one {
+    color: #950086;
+}
+.text-color-two {
+    color: #739500;
+}
+.text-color-three {
+    color: #4A3274;
+}
