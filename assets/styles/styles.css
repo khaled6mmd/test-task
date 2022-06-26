@@ -1,0 +1,441 @@
+/* global */
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*1rem = 10px*/
+    font-family: Noto Sans, Noto Sans-Regular;
+}
+
+body {
+    background-color: #F3F3F3;
+    color: #333333;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.section-container {
+    padding: 0 19%;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.section-title::before {
+    content: '';
+    display: inline-block;
+    width: 0.9rem;
+    height: 2.9rem;
+    background: #AE7129;
+    border-radius: 0.5rem;
+    margin-right: 0.9rem;
+
+}
+
+/* nav bar */
+
+.nav-bar {
+    background-color: #FBFBFC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 117px;
+}
+
+.nav-logo-container {
+    display: flex;
+    align-items: center;
+    min-height: 100px;
+}
+
+.nav-logo-text {
+    font-size: 1.4rem;
+    margin-left: 1.62rem;
+    font-weight: 400;
+    color: #333333;
+}
+
+.nav-tools {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100px;
+    margin-left: auto;
+}
+
+.nav-tool-box {
+    width: 4.8rem;
+    height: 4.8rem;
+    font-size: 1.6rem;
+    color: #026bb0;
+    background: #ffffff;
+    border: 0.065px solid #ebebeb;
+    border-radius: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.nav-tool-box:last-child {
+    margin-left: 3rem;
+}
+
+.notification {
+    position: relative;
+}
+
+.notification.active::after {
+    content: '';
+    display: inline-block;
+    width: 1.3rem;
+    height: 1.3rem;
+    background: #ff3c3c;
+    border-radius: 50%;
+    position: absolute;
+    border: 1.3px solid #ffffff;
+    left: 0.85rem;
+    bottom: 0.8rem;
+}
+
+.nav-expand {
+    font-size: 2.3rem;
+    color: #969696;
+    margin-left: 0.77rem;
+}
+
+/* manage childs */
+
+.manage-childs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 132px;
+    background-color: #ffffff;
+}
+
+.manage-childs-selected {
+    display: flex;
+    align-items: center;
+}
+
+.manage-childs-selected-avatar {
+    width: 8.4rem;
+    height: 8.5rem;
+    border-radius: 1.2rem;
+}
+
+.manage-childs-selected-name {
+    font-size: 2.9rem;
+    font-weight: 800;
+    color: #333333;
+    margin-left: 1.08rem;
+}
+
+.manage-childs-list {
+    display: flex;
+    margin-left: auto;
+}
+
+.manage-childs-item {
+    width: 12.3rem;
+    min-height: 5.01rem;
+    border: 1px solid #f0f0f1;
+    border-radius: 1.2rem;
+    margin-right: 1.9rem;
+    display: flex;
+    align-items: center;
+    padding: 0.9rem 1rem 0.9rem 1.1rem;
+    color: #333333;
+}
+
+.manage-childs-item:last-child {
+    margin-right: 1.5rem;
+}
+
+.manage-childs-item.active {
+    width: 12.3rem;
+    min-height: 5.01rem;
+    border: 1px solid #f0f0f1;
+    border-radius: 1.2rem;
+    margin-right: 1.9rem;
+    display: flex;
+    align-items: center;
+    padding: 0.9rem 1rem 0.9rem 1.1rem;
+    color: #026BB0;
+    background: #026bb01a;
+}
+
+.manage-childs-item-avatar {
+    width: 3.2rem;
+    height: 3.2rem;
+    border: 0.7px solid #ffffff;
+    border-radius: 0.8rem;
+}
+
+.manage-childs-item-name {
+    font-size: 1.6rem;
+    font-weight: 600;
+    align-self: start;
+    padding-left: 0.9rem;
+}
+
+.manage-childs-item.active>.manage-childs-item-name {
+    align-self: unset;
+}
+
+.manage-childs-add {
+    width: 15.9rem;
+    height: 4.8rem;
+    border: 0.7px solid #026bb0;
+    border-radius: 1.3rem;
+    color: #026BB0;
+    font-size: 1.6rem;
+    background-color: #ffffff;
+}
+
+.manage-childs-add-text {
+    font-weight: 500;
+}
+
+/*statistics*/
+
+.statistics {
+    margin-top: 4.5rem;
+}
+
+.statistics-title {
+    font-size: 2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.statistics-container {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 21.4rem;
+    justify-content: space-between;
+    padding: 3.5rem 6.9rem 4.1rem 6.9rem;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    border: 1px solid #e9e9e9;
+}
+
+.statistics-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333333;
+    min-width: 20rem;
+}
+
+.statistics-number {
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding-top: 1.8rem;
+}
+
+.statistics-description {
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding-top: 4px;
+}
+
+/* attendence */
+
+.attendence {
+    margin-top: 5.2rem;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.calendar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-bottom: 9px;
+}
+
+.calendar-nav-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    background: #ffffff;
+    border: 0.5px solid #e8e8e8;
+    border-radius: 10px;
+    color: #026BB0;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.calendar-nav-text {
+    font-size: 18px;
+    text-align: center;
+    color: #333333;
+    margin: 0 2rem;
+}
+
+.attendence-calendar-container {
+    max-width: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, minmax(auto, 1fr));
+    gap: 5px 6px;
+    background-color: #ffffff;
+    padding: 2.5rem 3rem;
+    border-radius: 2rem;
+}
+
+.first-day {
+    grid-column-start: 3;
+}
+
+.attendence-week-day {
+    height: 1.9rem;
+    font-size: 14px;
+    color: #8b8b8b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.attendence-day {
+    height: 5.7rem;
+    background: rgba(120, 181, 23, 0.10);
+    border-radius: 0.5rem;
+    font-size: 1.8rem;
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+
+.selected-day {
+    background-color: #3333331a
+}
+
+
+
+/* gradbook */
+
+.gradbook {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5.1rem;
+}
+
+.gradbook-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 3px 0;
+    display: table-cell;
+}
+
+.gradbook-table th:not(:first-child) {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 300;
+    padding-bottom: 15px;
+    vertical-align: middle;
+}
+.gradbook-table tr td:first-child {
+    padding-left: 3.7rem;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+    min-width: 29.5rem;
+}
+
+.gradbook td {
+    text-align: center;
+    width: 202px;
+    height: 65px;
+    background-color: #ffffff;
+    vertical-align: middle;
+    font-size: 16px;
+    border-right: 1px solid #e9e9e9;
+    border-left: 1px solid #e9e9e9;
+    position: relative;
+}
+.gradbook td::after {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #E9E9E9;
+    width: 85.3%;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.gradbook-table tr:nth-child(2) td {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-top: 1px solid #e9e9e9;
+}
+
+.gradbook-table tr:last-child td {
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+
+.gradbook-total {
+    display: flex;
+    align-items: center;
+    width: 99.4%;
+    height: 74px;
+    background: #ffffff;
+    border: 1px solid #e9e9e9;
+    border-radius: 20px;
+    margin-top: 4px;
+}
+.gradbook-total-title {
+    font-size: 16px;
+    text-align: left;
+    color: #333333;
+    font-weight: 600;
+    margin-left: 2.6rem;
+}
+.gradbook-total-score {
+    width: 97px;
+    height: 28px;
+    font-size: 20px;
+    text-align: right;
+    color: #AFAFAF;
+    margin-left: auto;
+    margin-right: 2.34rem;
+}
+.gradbook-total-score:after {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #E9E9E9;
+    width: 85.3%;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+}
+.gradbook-total-student-score {
+    font-weight: 600;
+    color: #333333;
+}
