@@ -661,9 +661,11 @@ body {
     html {
         font-size: 35%;
     }
-
     .nav-logo-text {
         font-size: 1.8rem;
+    }
+    .nav-tool-box:last-child {
+        margin-left: 1.5rem;
     }
     .section-container {
         padding: 0 1%;
