@@ -591,7 +591,6 @@ body {
     html {
         font-size: 55%;
     }
-
     .section-container {
         padding: 0 15%;
     }
@@ -621,12 +620,13 @@ body {
     .section-container {
         padding: 0 8%;
     }
-    .footer-copyrights {
-        margin-top: 10rem;
-    }
     .gradebook-table tr td:first-child {
         min-width: unset;
         width: 25rem;
+        padding-left: 2.5rem;
+    }
+    .footer-copyrights {
+        margin-top: 10rem;
     }
 }
 
@@ -642,19 +642,22 @@ body {
     .section-container {
         padding: 0 5%;
     }
-
-    .footer-copyrights {
-        margin-top: 6rem;
-    }
-
     .homework,
     .statistics,
     .gradebook,
     .attendence {
         margin-top: 30px;
     }
+    .gradebook td {
+        width: 19%;
+    }
     .gradebook-table tr td:first-child {
-        width: 20.4rem;
+        min-width: 19%;
+        padding-left: 3%;
+    }
+    .footer-copyrights {
+        margin-top: 6rem;
+        height: 5rem;
     }
 }
 
@@ -662,7 +665,6 @@ body {
     html {
         font-size: 39%;
     }
-
     .section-container {
         padding: 0 2%;
     }
@@ -672,20 +674,17 @@ body {
     html {
         font-size: 35%;
     }
-    .nav-logo-text {
-        font-size: 1.8rem;
-    }
-    .nav-tool-box:last-child {
-        margin-left: 1.5rem;
-    }
     .section-container {
         padding: 0 1%;
     }
     .nav-bar{
         padding: 0 1.5rem;
     }
-    .statistics-container {
-        padding: 3.5rem 1.5rem 4.1rem 1.5rem;
+    .nav-logo-text {
+        font-size: 1.8rem;
+    }
+    .nav-tool-box:last-child {
+        margin-left: 1.5rem;
     }
     .manage-childs {
         flex-wrap: wrap;
@@ -696,6 +695,9 @@ body {
     }
     .manage-childs-selected {
         padding-right: 5px;
+    }
+    .statistics-container {
+        padding: 3.5rem 1.5rem 4.1rem 1.5rem;
     }
     .gradebook-total-score {
         font-size: 1.8rem;
