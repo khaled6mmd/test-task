@@ -19,7 +19,7 @@
 }
 .progressbar-marker {
     fill: #55b9e6;
-    transform-origin: 5rem 5rem;
+    transform-origin: 50px 50px;
     transform: rotate(0deg);
     transition: transform 1s ease
 }
@@ -62,4 +62,20 @@
 }
 .text-color-three {
     color: #4A3274;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1600px) {
+    .progressbar-line {
+        stroke-dasharray: 32rem, 32rem;
+        stroke-dashoffset: 32rem;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .progressbar-line {
+        stroke-dasharray: 36rem, 36rem;
+        stroke-dashoffset: 36rem;
+    }
 }

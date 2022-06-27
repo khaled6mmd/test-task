@@ -7,7 +7,8 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" rel="stylesheet"
+        type="text/css" />
     <link rel="stylesheet" href="/assets/styles/reset.css  ">
     <link rel="stylesheet" href="/assets/styles/progress-circle.css">
     <link rel="stylesheet" href="/assets/styles/styles.css">
@@ -63,40 +64,62 @@
         <h1 class="section-title">Statistics</h1>
         <div class="statistics-container">
             <div class="statistics-item">
-                        <div class="progress progress-one text-color-one">
-                            <svg viewBox="-5 -5 110 110" width="76px">
-                                <circle class="progressbar-back" r="48.5" cx="50" cy ="50"/>
-                                <circle class="progressbar-line line-color-one" r="48.5" cx="50" cy ="50" />
-                                <circle class="progressbar-marker marker-color-one" r="6" cx="50" cy="1.5" />
-                            </svg>
-                            <div class="progressbar-text">0</div>
+                <div class="progress progress-one text-color-one">
+                    <svg viewBox="-5 -5 110 110" width="7.6rem">
+                        <circle class="progressbar-back" r="48.5" cx="50" cy="50" />
+                        <circle class="progressbar-line line-color-one" r="48.5" cx="50" cy="50" />
+                        <circle class="progressbar-marker marker-color-one" r="6" cx="50" cy="1.5" />
+                    </svg>
+                    <div class="progressbar-text">0</div>
                 </div>
                 <div class="statistics-number">32 out of 40</div>
                 <div class="statistics-description">Solved Homework</div>
             </div>
             <div class="statistics-item">
-                    <div class="progress progress-two text-color-two">
-                        <svg viewBox="-5 -5 110 110" width="76px">
-                            <circle class="progressbar-back" r="48.5" cx="50" cy ="50"/>
-                            <circle class="progressbar-line line-color-two" r="48.5" cx="50" cy ="50" />
-                            <circle class="progressbar-marker marker-color-two " r="6" cx="50" cy="1.5" />
-                        </svg>
-                        <div class="progressbar-text">0</div>
+                <div class="progress progress-two text-color-two">
+                    <svg viewBox="-5 -5 110 110" width="7.6rem">
+                        <circle class="progressbar-back" r="48.5" cx="50" cy="50" />
+                        <circle class="progressbar-line line-color-two" r="48.5" cx="50" cy="50" />
+                        <circle class="progressbar-marker marker-color-two " r="6" cx="50" cy="1.5" />
+                    </svg>
+                    <div class="progressbar-text">0</div>
                 </div>
                 <div class="statistics-number">45 out of 90</div>
                 <div class="statistics-description">Attended Days</div>
             </div>
             <div class="statistics-item">
-                    <div class="progress progress-three text-color-three">
-                        <svg viewBox="-5 -5 110 110" width="76px">
-                            <circle class="progressbar-back" r="48.5" cx="50" cy ="50"/>
-                            <circle class="progressbar-line line-color-three" r="48.5" cx="50" cy ="50" />
-                            <circle class="progressbar-marker marker-color-three " r="6" cx="50" cy="1.5" />
-                        </svg>
-                        <div class="progressbar-text">0</div>
+                <div class="progress progress-three text-color-three">
+                    <svg viewBox="-5 -5 110 110" width="7.6rem">
+                        <circle class="progressbar-back" r="48.5" cx="50" cy="50" />
+                        <circle class="progressbar-line line-color-three" r="48.5" cx="50" cy="50" />
+                        <circle class="progressbar-marker marker-color-three " r="6" cx="50" cy="1.5" />
+                    </svg>
+                    <div class="progressbar-text">0</div>
                 </div>
                 <div class="statistics-number">8 out of 11</div>
                 <div class="statistics-description">Online Sessions attended</div>
+            </div>
+        </div>
+    </div>
+    <div class="homework section-container">
+        <h1 class="section-title">Homework</h1>
+        <button class="homework-see-more">All Homeworks <i class="fas fa-angle-right"></i>
+        </button>
+        <div class="homework-container">
+            <div class="homework-info">
+                <div class="homework-info-name">
+                    Adam
+                </div>
+                <div class="homework-info-average">
+                    Average
+                </div>
+                <div class="homework-info-subject">
+                    <span class="homework-info-subject-name">Chemistry</span>
+                    <i class="fas fa-caret-circle-down"></i>
+                </div>
+            </div>
+            <div class="homework-charts">
+                <canvas id="myChart" width="100%" height="30%"></canvas>
             </div>
         </div>
     </div>
@@ -112,46 +135,46 @@
             </div>
         </div>
         <div class="attendence-calendar-container">
-                            <!-- week day -->
-                <div class="attendence-week-day">Sun</div>
-                <div class="attendence-week-day">Mon</div>
-                <div class="attendence-week-day">Tue</div>
-                <div class="attendence-week-day">Wed</div>
-                <div class="attendence-week-day">Thu</div>
-                <div class="attendence-week-day">Fri</div>
-                <div class="attendence-week-day">Sat</div>
-                            <!-- day number -->
-                <div class="attendence-day first-day">1</div>
-                <div class="attendence-day">2</div>
-                <div class="attendence-day">3</div>
-                <div class="attendence-day selected-day">4</div>
-                <div class="attendence-day selected-day">5</div>
-                <div class="attendence-day">6</div>
-                <div class="attendence-day">7</div>
-                <div class="attendence-day">8</div>
-                <div class="attendence-day">9</div>
-                <div class="attendence-day">10</div>
-                <div class="attendence-day selected-day">11</div>
-                <div class="attendence-day selected-day">12</div>
-                <div class="attendence-day selected-day">13</div>
-                <div class="attendence-day">14</div>
-                <div class="attendence-day">15</div>
-                <div class="attendence-day">16</div>
-                <div class="attendence-day">17</div>
-                <div class="attendence-day selected-day">18</div>
-                <div class="attendence-day selected-day">19</div>
-                <div class="attendence-day selected-day">20</div>
-                <div class="attendence-day">21</div>
-                <div class="attendence-day selected-day">22</div>
-                <div class="attendence-day">23</div>
-                <div class="attendence-day">24</div>
-                <div class="attendence-day selected-day">25</div>
-                <div class="attendence-day selected-day">26</div>
-                <div class="attendence-day selected-day">27</div>
-                <div class="attendence-day">28</div>
-                <div class="attendence-day">29</div>
-                <div class="attendence-day">30</div>
-                <div class="attendence-day">31</div>
+            <!-- week day -->
+            <div class="attendence-week-day">Sun</div>
+            <div class="attendence-week-day">Mon</div>
+            <div class="attendence-week-day">Tue</div>
+            <div class="attendence-week-day">Wed</div>
+            <div class="attendence-week-day">Thu</div>
+            <div class="attendence-week-day">Fri</div>
+            <div class="attendence-week-day">Sat</div>
+            <!-- day number -->
+            <div class="attendence-day first-day">1</div>
+            <div class="attendence-day">2</div>
+            <div class="attendence-day">3</div>
+            <div class="attendence-day selected-day">4</div>
+            <div class="attendence-day selected-day">5</div>
+            <div class="attendence-day">6</div>
+            <div class="attendence-day">7</div>
+            <div class="attendence-day">8</div>
+            <div class="attendence-day">9</div>
+            <div class="attendence-day">10</div>
+            <div class="attendence-day selected-day">11</div>
+            <div class="attendence-day selected-day">12</div>
+            <div class="attendence-day selected-day">13</div>
+            <div class="attendence-day">14</div>
+            <div class="attendence-day">15</div>
+            <div class="attendence-day">16</div>
+            <div class="attendence-day">17</div>
+            <div class="attendence-day selected-day">18</div>
+            <div class="attendence-day selected-day">19</div>
+            <div class="attendence-day selected-day">20</div>
+            <div class="attendence-day">21</div>
+            <div class="attendence-day selected-day">22</div>
+            <div class="attendence-day">23</div>
+            <div class="attendence-day">24</div>
+            <div class="attendence-day selected-day">25</div>
+            <div class="attendence-day selected-day">26</div>
+            <div class="attendence-day selected-day">27</div>
+            <div class="attendence-day">28</div>
+            <div class="attendence-day">29</div>
+            <div class="attendence-day">30</div>
+            <div class="attendence-day">31</div>
         </div>
     </div>
     <div class="gradbook section-container">
@@ -163,7 +186,7 @@
                 <th>Year Pass Limit</th>
                 <th>Total Marks</th>
             </tr>
-            <tr> 
+            <tr>
                 <td>Math</td>
                 <td>42/50</td>
                 <td>40/50</td>
@@ -193,17 +216,17 @@
             </tr>
             <tr>
                 <td>Statics</td>
-                <td>30/100</td>
+                <td><span class="gradbook-table-faild">30</span>/100</td>
                 <td>72/100</td>
                 <td>100</td>
                 <td>102/200</td>
             </tr>
             <tr>
                 <td>Science</td>
-                <td>20/50</td>
-                <td>19/50</td>
+                <td><span class="gradbook-table-faild">20</span>/50</td>
+                <td><span class="gradbook-table-faild">19</span>/50</td>
                 <td>50</td>
-                <td>39/100</td>
+                <td><span class="gradbook-table-faild">39</span>/100</td>
             </tr>
             <tr>
                 <td>Arabic</td>
@@ -218,7 +241,15 @@
             <div class="gradbook-total-score"><span class="gradbook-total-student-score">3785</span>/4000</div>
         </div>
     </div>
-    <script src="/assets/scripts/script.js" async defer></script>
+    <footer>
+        <div class="footer-copyrights section-container">
+            <div class="footer-copyrights-text">
+                Copyright &copy; 2022 Nagwa All Rights Reserved
+            </div>
+        </div>
+    </footer>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
+<script src="/assets/scripts/script.js" async defer></script>
 
 </html>
