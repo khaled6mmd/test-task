@@ -4,6 +4,7 @@
     justify-content: center;
     width: 7.6rem;
     height: 7.6rem;
+    overflow: visible;
 }
 
 .progressbar-back {
@@ -22,10 +23,11 @@
     transition: stroke-dashoffset 1s ease;
 }
 .progressbar-marker {
-    fill: #55b9e6;
+    fill: #ffffff;
+    stroke-width: 3;
     transform-origin: 50px 50px;
     transform: rotate(0deg);
-    transition: transform 1s ease
+    transition: transform 1s ease;
 }
 .progressbar-text {
     position: absolute; 
@@ -36,6 +38,10 @@
     transform: translate(-50%, -50%);
     font-weight: 600;
     font-size: 1.96rem;
+}
+
+.progress-circle {
+    overflow: visible;
 }
 
 .line-color-one {
@@ -49,13 +55,13 @@
 }
 
 .marker-color-one {
-    fill: #950086;
+    stroke: #950086;
 }
 .marker-color-two {
-    fill: #739500;
+    stroke: #739500;
 }
 .marker-color-three {
-    fill: #4A3274;
+    stroke: #4A3274;
 }
 
 .text-color-one {

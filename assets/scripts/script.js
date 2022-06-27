@@ -1,8 +1,8 @@
-const ctx = document.getElementById('myChart').getContext('2d');
+const ctx = document.getElementById('HomeworkChart').getContext('2d');
 
-// bars charts
+// chartsjs
 
-const myChart = new Chart(ctx, {
+const HomeworkChart = new Chart(ctx, {
     type: 'bar',
     data: {
         labels: ['19/5', '18/4', '17/6', '20/7', '22/7', '30/8', '30/8', '30/8', '30/8', '30/8', '30/8', '30/8', '30/8', '30/8', '30/8', '30/8', '30/8'],
@@ -52,9 +52,9 @@ const myChart = new Chart(ctx, {
                 ticks: {
                     max: this.max,
                     callback: function (value) {
-                      return value +'%'; 
+                        return value + '%';
                     },
-                  }
+                }
             },
             x: {
                 grid: {
@@ -66,6 +66,20 @@ const myChart = new Chart(ctx, {
     }
 });
 
+// toggle datasets of chart bars
+
+const toggleDataSets = (value) => {
+    console.log(HomeworkChart.isDatasetVisible(value));
+    const isDatasetVisible = HomeworkChart.isDatasetVisible(value)
+    if (isDatasetVisible) {
+        HomeworkChart.hide(value);
+        document.querySelector('.homework-info').children[value].classList.add('homework-info-legend-off')
+        console.log();
+    } else {
+        HomeworkChart.show(value);
+        document.querySelector('.homework-info').children[value].classList.remove('homework-info-legend-off')
+    }
+}
 
 // Pie charts
 
@@ -75,8 +89,8 @@ const setProgress = (value, chartClassName) => {
     document.querySelector(chartClassName + ' .progressbar-line')
         .style['stroke-dashoffset'] = 'rotate(' + (304.777 * (1 - value / 100)) + 'px';
     document.querySelector(chartClassName + ' .progressbar-text')
-        .innerHTML = value+'%';
-        document.querySelector(chartClassName + ' .progressbar-line').style.strokeDashoffset = (304.777 * (1 - value / 100))+'px'
+        .innerHTML = value + '%';
+    document.querySelector(chartClassName + ' .progressbar-line').style.strokeDashoffset = (304.777 * (1 - value / 100)) + 'px'
 }
 
 setProgress(25, '.progress-one')
