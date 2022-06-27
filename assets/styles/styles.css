@@ -3,7 +3,7 @@
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%; /*1rem = 10px*/
+    font-size: 62.5%;       /*1rem = 10px*/
     font-family: Noto Sans, Noto Sans-Regular;
 }
 
@@ -57,10 +57,11 @@ body {
     min-height: 10rem;
 }
 
-.nav-log {
+.nav-logo-img {
     height: 5rem;
     width: 5rem;
 }
+
 
 .nav-logo-text {
     font-size: 1.4rem;
@@ -259,7 +260,7 @@ body {
 /* attendence */
 
 .attendence {
-    margin-top: 52px;
+    margin-top: 5.2rem;
     max-width: 100%;
     position: relative;
     width: 100%;
@@ -345,7 +346,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 51px;
+    margin-top: 5.1rem;
 }
 
 .gradbook-table {
@@ -459,7 +460,7 @@ body {
 .homework {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 51px;
+    margin-top: 5.1rem;
 }
 
 .homework-see-more {
@@ -510,6 +511,7 @@ body {
     display: flex;
     align-items: center;
 }
+
 .homework-info-average::before {
     content: '';
     display: inline-block;
@@ -556,55 +558,134 @@ body {
 
 /* Media Queries */
 
-/* @media only screen and (max-width: 600px) {}
-@media only screen and (min-width: 600px) {}
-@media only screen and (min-width: 768px) {} */
 
-@media only screen and (max-width: 1600px) {
+
+@media only screen and (min-width: 2260px) {
     html {
-        font-size: 57%; 
+        font-size: 90%;
     }
+
+    .section-container {
+        padding: 0 15%;
+    }
+
+}
+
+@media only screen and (min-width: 1801px) {
+    html {
+        font-size: 75%;
+    }
+
+    .section-container {
+        padding: 0 15%;
+    }
+
+    .statistics {
+        margin-top: 8rem;
+    }
+
+    .homework,
+    .gradbook {
+        margin-top: 8.6rem;
+    }
+
+    .attendence {
+        margin-top: 8.8rem;
+    }
+}
+
+@media only screen and (max-width: 1700px) {
+    html {
+        font-size: 55%;
+    }
+
     .section-container {
         padding: 0 15%;
     }
 }
 
+@media only screen and (max-width: 1260px) {
+    .section-container {
+        padding: 0 8%;
+    }
+}
+
 @media only screen and (max-width: 1024px) {
     html {
-        font-size: 50%; 
+        font-size: 50%;
     }
-    .section-container {
-        padding: 0 10%;
+
+    .footer-copyrights {
+        margin-top: 10rem;
     }
 }
 
 @media only screen and (max-width: 768px) {
     html {
-        font-size: 40%; 
+        font-size: 45%;
     }
+
     .section-container {
         padding: 0 5%;
     }
-}
 
-@media only screen and (max-width: 555px) {
-    html {
-        font-size: 30%; 
-    }
-    .section-container {
-        padding: 0 2%;
-    }
-    .nav-logos {
-        height: 2.5rem;
-        width: 2.5rem;
+    .footer-copyrights {
+        margin-top: 6rem;
     }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 660px) {
     html {
-        font-size: 25%; 
+        font-size: 40%;
     }
+
     .section-container {
         padding: 0 2%;
+    }
+}
+
+
+@media only screen and (max-width: 520px) {
+    html {
+        font-size: 38%;
+    }
+
+}
+
+@media only screen and (max-width: 475px) {
+    html {
+        font-size: 33%;
+    }
+
+    .section-container {
+        padding: 0 1%;
+    }
+
+    .statistics-container {
+        padding: 3.5rem 1.5rem 4.1rem 1.5rem;
+    }
+
+    .manage-childs {
+        flex-wrap: wrap;
+    }
+
+    .manage-childs>* {
+        margin: 7px;
+    }
+}
+
+
+@media only screen and (max-width: 405px) {
+    .statistics-container {
+        padding: 3.5rem 1rem 4.1rem 1rem;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .statistics-container {
+        flex-direction: column;
+    }
+    .statistics-item{
+        margin:10px 0;
     }
 }

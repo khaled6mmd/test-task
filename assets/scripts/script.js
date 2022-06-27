@@ -73,10 +73,10 @@ const setProgress = (value, chartClassName) => {
     document.querySelector(chartClassName + ' .progressbar-marker')
         .style.transform = 'rotate(' + (360 * value / 100) + 'deg)';
     document.querySelector(chartClassName + ' .progressbar-line')
-        .style['stroke-dashoffset'] = 'rotate(' + ((304.777 * (1 - value / 100))/10) + 'rem';
+        .style['stroke-dashoffset'] = 'rotate(' + (304.777 * (1 - value / 100)) + 'px';
     document.querySelector(chartClassName + ' .progressbar-text')
         .innerHTML = value+'%';
-        document.querySelector(chartClassName + ' .progressbar-line').style.strokeDashoffset = ((305.777 * (1 - value / 100))/10) +'rem'
+        document.querySelector(chartClassName + ' .progressbar-line').style.strokeDashoffset = (304.777 * (1 - value / 100))+'px'
 }
 
 setProgress(25, '.progress-one')

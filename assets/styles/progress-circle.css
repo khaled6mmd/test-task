@@ -1,5 +1,9 @@
 .progress {
     position: relative;
+    display: flex;
+    justify-content: center;
+    width: 7.6rem;
+    height: 7.6rem;
 }
 
 .progressbar-back {
@@ -13,8 +17,8 @@
     stroke-linecap: round;
     transform: rotate(-90deg);
     transform-origin: 50px 50px;
-    stroke-dasharray: 30.4777rem, 30.4777rem;
-    stroke-dashoffset: 30.4777rem;
+    stroke-dasharray: 304.777px, 304.777px;
+    stroke-dashoffset: 304.777px;
     transition: stroke-dashoffset 1s ease;
 }
 .progressbar-marker {
@@ -65,17 +69,34 @@
 }
 
 /* Media Queries */
-
-@media only screen and (max-width: 1600px) {
-    .progressbar-line {
-        stroke-dasharray: 32rem, 32rem;
-        stroke-dashoffset: 32rem;
+@media only screen and (max-width: 1700px) {
+    .progress {
+        width: 11rem;
+        height: 11rem;
+    }
+}
+@media only screen and (max-width: 475px) {
+    .progress {
+        width: 13rem;
+        height: 13rem;
+    }
+}
+@media only screen and (max-width: 340px) {
+    .progress {
+        width: 16rem;
+        height: 16rem;
+    }
+}
+@media only screen and (min-width: 1801px) {
+    .progress {
+        width: 10rem;
+        height: 10rem;
     }
 }
 
-@media only screen and (max-width: 1024px) {
-    .progressbar-line {
-        stroke-dasharray: 36rem, 36rem;
-        stroke-dashoffset: 36rem;
+@media only screen and (min-width: 2260px) {
+    .progress {
+        width: 15rem;
+        height: 15rem;
     }
 }
