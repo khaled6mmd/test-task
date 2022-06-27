@@ -3,8 +3,8 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;  /*1rem = 10px*/
+    -webkit-text-size-adjust:none; /*iOS text size adjust*/
     font-family: 'Noto Sans', sans-serif;
-    -webkit-text-size-adjust:none;
 }
 
 body {
@@ -396,7 +396,6 @@ body {
 .gradebook-table tr:last-child td {
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
-    border-bottom: 1px solid #e9e9e9;
 }
 
 
@@ -427,6 +426,8 @@ body {
     margin-left: auto;
     margin-right: 2.34rem;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .gradebook-total-score::before {
@@ -441,6 +442,7 @@ body {
 
 .gradebook-total-student-score {
     font-weight: 600;
+    color: #333333;
 }
 
 .gradebook-table-faild {
@@ -616,9 +618,15 @@ body {
     html {
         font-size: 50%;
     }
-
+    .section-container {
+        padding: 0 8%;
+    }
     .footer-copyrights {
         margin-top: 10rem;
+    }
+    .gradebook-table tr td:first-child {
+        min-width: unset;
+        width: 25rem;
     }
 }
 
@@ -644,6 +652,9 @@ body {
     .gradebook,
     .attendence {
         margin-top: 30px;
+    }
+    .gradebook-table tr td:first-child {
+        width: 20.4rem;
     }
 }
 
@@ -676,7 +687,6 @@ body {
     .statistics-container {
         padding: 3.5rem 1.5rem 4.1rem 1.5rem;
     }
-
     .manage-childs {
         flex-wrap: wrap;
         padding: 10px;
@@ -686,6 +696,9 @@ body {
     }
     .manage-childs-selected {
         padding-right: 5px;
+    }
+    .gradebook-total-score {
+        font-size: 1.8rem;
     }
 }
 
