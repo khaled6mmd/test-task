@@ -675,7 +675,7 @@ body {
         font-size: 35%;
     }
     .section-container {
-        padding: 0 1%;
+        padding: 0 2%;
     }
     .nav-bar{
         padding: 0 1.5rem;
@@ -699,30 +699,35 @@ body {
     .statistics-container {
         padding: 3.5rem 1.5rem 4.1rem 1.5rem;
     }
+    .statistics-item {
+        min-width: unset;
+    }
     .gradebook-total-score {
         font-size: 1.8rem;
     }
 }
 
 @media only screen and (max-width: 430px) {
-    .statistics-container {
-        padding: 3.5rem 1.5rem 4.1rem 1.5rem;
-    }
     .manage-childs-item:last-child {
         margin-right: 0;
     }
 }
 
 @media only screen and (max-width: 360px) {
-    .statistics-container {
-        flex-direction: column;
-    }
-    
     .manage-childs-list {
         margin: 10px;
     }
 
     .statistics-item {
         margin: 10px 0;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .statistics-container {
+        flex-direction: column;
+    }
+    .statistics-item {
+        min-width: 25rem;
     }
 }
