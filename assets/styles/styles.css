@@ -3,8 +3,8 @@
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%;       /*1rem = 10px*/
-    font-family: Noto Sans, Noto Sans-Regular;
+    font-size: 62.5%;  /*1rem = 10px*/
+    font-family: 'Noto Sans', sans-serif;
 }
 
 body {
@@ -558,8 +558,6 @@ body {
 
 /* Media Queries */
 
-
-
 @media only screen and (min-width: 2260px) {
     html {
         font-size: 90%;
@@ -568,7 +566,6 @@ body {
     .section-container {
         padding: 0 15%;
     }
-
 }
 
 @media only screen and (min-width: 1801px) {
@@ -580,17 +577,10 @@ body {
         padding: 0 15%;
     }
 
-    .statistics {
-        margin-top: 8rem;
-    }
-
     .homework,
-    .gradbook {
-        margin-top: 8.6rem;
-    }
-
+    .statistics .gradbook,
     .attendence {
-        margin-top: 8.8rem;
+        margin-top: 8rem;
     }
 }
 
@@ -604,9 +594,20 @@ body {
     }
 }
 
-@media only screen and (max-width: 1260px) {
+@media only screen and (max-width: 1440px) {
+    html {
+        font-size: 52%;
+    }
+
     .section-container {
-        padding: 0 8%;
+        padding: 0 10%;
+    }
+
+    .homework,
+    .statistics,
+    .gradbook,
+    .attendence {
+        margin-top: 45px;
     }
 }
 
@@ -625,6 +626,10 @@ body {
         font-size: 45%;
     }
 
+    .nav-logo-text {
+        font-size: 1.6rem;
+    }
+
     .section-container {
         padding: 0 5%;
     }
@@ -632,11 +637,18 @@ body {
     .footer-copyrights {
         margin-top: 6rem;
     }
+
+    .homework,
+    .statistics,
+    .gradbook,
+    .attendence {
+        margin-top: 30px;
+    }
 }
 
 @media only screen and (max-width: 660px) {
     html {
-        font-size: 40%;
+        font-size: 39%;
     }
 
     .section-container {
@@ -644,17 +656,13 @@ body {
     }
 }
 
-
-@media only screen and (max-width: 520px) {
-    html {
-        font-size: 38%;
-    }
-
-}
-
 @media only screen and (max-width: 475px) {
     html {
         font-size: 33%;
+    }
+
+    .nav-logo-text {
+        font-size: 1.8rem;
     }
 
     .section-container {
@@ -668,16 +676,21 @@ body {
     .manage-childs {
         flex-wrap: wrap;
     }
-
-    .manage-childs>* {
-        margin: 7px;
-    }
 }
 
-
-@media only screen and (max-width: 405px) {
+@media only screen and (max-width: 408px) {
     .statistics-container {
-        padding: 3.5rem 1rem 4.1rem 1rem;
+        padding: 3.5rem 1.5rem 4.1rem 1.5rem;
+    }
+
+    .manage-childs {
+        padding: 10px;
+    }
+
+    .manage-childs-list,
+    .manage-childs-selected,
+    .manage-childs-add {
+        margin-bottom: 7px;
     }
 }
 
@@ -685,7 +698,16 @@ body {
     .statistics-container {
         flex-direction: column;
     }
-    .statistics-item{
-        margin:10px 0;
+
+    .statistics-item {
+        margin: 10px 0;
+    }
+
+    .manage-childs-item:last-child {
+        margin-right: 0;
+    }
+
+    .manage-childs-list {
+        margin-left: 10px;
     }
 }
