@@ -621,7 +621,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 850px) {
     html {
         font-size: 45%;
     }
@@ -658,7 +658,7 @@ body {
 
 @media only screen and (max-width: 500px) {
     html {
-        font-size: 33%;
+        font-size: 35%;
     }
     .nav-logo-text {
         font-size: 1.8rem;
@@ -684,13 +684,16 @@ body {
     }
 }
 
-@media only screen and (max-width: 408px) {
+@media only screen and (max-width: 430px) {
     .statistics-container {
         padding: 3.5rem 1.5rem 4.1rem 1.5rem;
     }
+    .manage-childs-item:last-child {
+        margin-right: 0;
+    }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 360px) {
     .statistics-container {
         flex-direction: column;
     }
@@ -701,9 +704,5 @@ body {
 
     .statistics-item {
         margin: 10px 0;
-    }
-
-    .manage-childs-item:last-child {
-        margin-right: 0;
     }
 }
